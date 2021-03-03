@@ -44,12 +44,10 @@ VALUES              ( 1,'DeuBug','100','80','01/03/2021','18/01/2019')
 
 
 
---Atualizar o nome do personagem Fer8 para Fer7;
 UPDATE Personagens
 SET NomePersonagem= 'Fer7'
 WHERE IdPersonagem= 3;
 
---Atualizar o nome da classe de Necromante para Necromancer;
 UPDATE Classe
 SET NomeClasse='Necromancer'
 WHERE IdClasse= 5;

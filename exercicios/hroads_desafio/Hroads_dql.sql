@@ -1,6 +1,4 @@
 USE SENAI_HROADS_TARDE;
---SELECT * FROM TipoHabilidade;
-
 
 --Selecionar todas as habilidades;
 SELECT * FROM Habilidades;
@@ -14,7 +12,7 @@ SELECT Classe.NomeClasse FROM Classe;
 --Selecionar todos os personagens;
 SELECT * FROM Personagens;
 
---Realizar a contagem de quantas habilidades estão cadastradas;
+--Contar de quantas habilidades estão cadastradas;
 SELECT * FROM Habilidades
 SELECT COUNT(*) FROM Habilidades;
 
@@ -37,7 +35,7 @@ INNER JOIN Personagens
 ON Personagens.IdClasse= Classe.IdClasse;
 
 
---Selecionar todos os personagens e as classes (mesmo que elas não tenhamcorrespondência em personagens);
+--Selecionar todos os personagens e as classes ;
 SELECT  Personagens.NomePersonagem AS Personagem, Classe.NomeClasse AS Classe  FROM Classe 
 LEFT JOIN Personagens
 ON Personagens.IdClasse= Classe.IdClasse;
@@ -49,7 +47,7 @@ ON Classe.IdClasse= ClasseHabilidade.IdClasse
 LEFT JOIN Habilidades
 ON ClasseHabilidade.IdHabilidade= Habilidades.IdHabilidade;
 
---Selecionar todas as habilidades e suas classes (somente as que possuem correspondência);
+--Selecionar todas as habilidades e suas classes ;
 SELECT Classe.NomeClasse AS Classe, Habilidades.NomeHabilidade AS Habilidade FROM Classe 
 RIGHT JOIN ClasseHabilidade
 ON Classe.IdClasse= ClasseHabilidade.IdClasse
