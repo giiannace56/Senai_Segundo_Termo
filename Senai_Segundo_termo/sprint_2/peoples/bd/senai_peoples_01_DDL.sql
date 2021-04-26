@@ -1,0 +1,29 @@
+-- DDL
+
+CREATE DATABASE T_Peoples;
+GO
+
+USE T_Peoples;
+GO
+
+CREATE TABLE funcionarios(
+	idFuncionario INT PRIMARY KEY IDENTITY,
+	nome VARCHAR(100) NOT NULL,
+	sobrenome VARCHAR(200) NOT NULL,
+	dataNascimento DATE NOT NULL
+);
+GO
+
+CREATE TABLE tipoUsuarios(
+	idTipoUsuario INT PRIMARY KEY IDENTITY,
+	permissao VARCHAR(250) NOT NULL UNIQUE
+);
+GO
+
+CREATE TABLE usuarios(
+	idUsuario INT PRIMARY KEY IDENTITY,
+	idTipoUsuario INT FOREIGN KEY REFERENCES tipoUsuarios(idTipoUsuario),
+	email VARCHAR(250) NOT NULL UNIQUE,
+	senha VARCHAR(250) NOT NULL
+);
+GO
