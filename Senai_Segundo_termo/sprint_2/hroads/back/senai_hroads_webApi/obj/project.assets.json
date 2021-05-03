@@ -5703,19 +5703,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Desktop\\.nuget\\packages\\": {}
+    "C:\\Users\\alanc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desktop\\Desktop\\Codação\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+      "projectUniqueName": "C:\\Users\\alanc\\Desktop\\Desktop\\Arquivos\\Repositorios\\Senai_Segundo_Termo\\Senai_Segundo_termo\\sprint_2\\hroads\\back\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
       "projectName": "senai_hroads_webApi",
-      "projectPath": "C:\\Users\\Desktop\\Desktop\\Codação\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
-      "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desktop\\Desktop\\Codação\\senai_hroads_webApi\\senai_hroads_webApi\\obj\\",
+      "projectPath": "C:\\Users\\alanc\\Desktop\\Desktop\\Arquivos\\Repositorios\\Senai_Segundo_Termo\\Senai_Segundo_termo\\sprint_2\\hroads\\back\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+      "packagesPath": "C:\\Users\\alanc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alanc\\Desktop\\Desktop\\Arquivos\\Repositorios\\Senai_Segundo_Termo\\Senai_Segundo_termo\\sprint_2\\hroads\\back\\senai_hroads_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5792,7 +5792,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
