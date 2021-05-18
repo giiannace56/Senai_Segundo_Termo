@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goblin+One&display=swap" rel="stylesheet"> 
         <title>Doguitos</title> 
     </head>
     <body>
         <h1>SITE DE DOGUINHOS</h1>
+        <audio src="tetris.mp3"></audio>
         <div id="dog1">
             <img class="imagem1" src="Ibageins/2.jpeg" alt="Sammy"/> 
             <h2>Sammy</h2>
@@ -28,9 +31,9 @@
             <h2>Nenem</h2>
         </div>
         <div id="botauns">
-            <input id="btn" type="button" value="Nome dos Spitz" onclick="onlySpitz()"/> <!--Filter  -->
-            <input id="btn" type="button" value="Idade Real" onclick="idadeReal()"/> <!-- Map -->
-            <input id="btn" type="button" value="Soma todas as Idades" onclick="IdadeTotal()"/> <!-- Reduce -->
+            <input id="btn1" type="button" value="Nome dos Spitz" onclick="onlySpitz()"/> <!--Filter  -->
+            <input id="btn2" type="button" value="Idade Real" onclick="idadeReal()"/> <!-- Map -->
+            <input id="btn3" type="button" value="Soma todas as Idades" onclick="IdadeTotal()"/> <!-- Reduce -->
             <input id="btn" type="button" value="Piorar Site" onclick="mudaTudo()"/>
         </div>
 
@@ -91,6 +94,41 @@
                 alert(` O total das idades somadas de cada doguinho é de ${idadezada} anos.`);
             }
 
+            function mudaTudo()
+            {
+                 document.getElementById("dog5").style.display = "none";
+
+                 document.getElementById("dog4").style.display = "none";
+                
+                 document.getElementById("dog3").style.display = "none";
+
+                 document.getElementById("dog2").style.display = "none";
+
+                 document.getElementById("dog1").style.display = "none";
+
+                 document.getElementById("btn1").style.display = "none";
+                 document.getElementById("btn2").style.display = "none";
+                 document.getElementById("btn3").style.display = "none";
+                 document.getElementById("btn").style.display = "none";
+                 
+
+                 document.getElementsByTagName("h1")[0].innerHTML = "Welcome to the Tetris";
+
+                 document.getElementsByTagName("h1")[0].style.fontSize = "60px";
+
+                 document.getElementsByTagName("body")[0].style.backgroundImage = "url('Ibageins/10.gif')";
+                  
+                 document.getElementsByTagName("body")[0].style.backgroundSize = "1650px";
+                 
+                 document.getElementsByTagName("h1")[0].style.color = "#560BDE";
+
+                 document.getElementsByTagName("h1")[0].style.fontfamily = "Goblin One, cursive";               
+                
+                 var audio = document.querySelector("audio") 
+                 audio.play() 
+                
+            }
+            
         </script> 
     </body>
 </html>
